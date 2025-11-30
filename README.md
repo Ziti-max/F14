@@ -1,6 +1,11 @@
 # F-14 TOMCAT
+![Dev](https://img.shields.io/badge/Developer-G0odkid-black?style=for-the-badge)
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg)](https://www.python.org/) 
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)](https://github.com/G0odKid/Erebus) 
+![Version](https://img.shields.io/badge/Version-v1.0-orange.svg)
 
-Advanced NoSQL Injection Framework
+## Advanced NoSQL Injection Framework
 
 F-14 Tomcat is a modern, modular, and fast tool designed for exploiting NoSQL injection vulnerabilities. While currently focused on MongoDB, it provides advanced techniques to bypass WAFs and extract data efficiently using binary search algorithms.
 
@@ -75,4 +80,7 @@ python3 tomcat.py -u [http://target.com/api](http://target.com/api) -d '{"id": 1
 - Header Injection support.
 
 
-Developer: G0odkid
+## Reporting Bugs & Issues
+
+Have a question, found a bug, or want to suggest a new feature?  
+Please open an issue in the **Issues** tab — contributions and feedback are always welcome
