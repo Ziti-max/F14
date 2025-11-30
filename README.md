@@ -27,7 +27,7 @@ F-14 Tomcat is a modern, modular, and fast tool designed for exploiting NoSQL in
 
 ** 1.Clone the repository**
 ```bash
-git clone [https://github.com/G0odkid/F-14.git](https://github.com/G0odkid/F-14.git)
+git clone https://github.com/G0odkid/F14
 cd F-14
 ```
 
